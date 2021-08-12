@@ -65,6 +65,7 @@
                         </isif>
                     </isloop>
                     <isinclude template="cart/cartApproachingDiscount" />
+                    <isif condition="${pdict.notes.length == 0}" > <h1>${Resource.msg('info.cart.user.nonotes','cart',null)}</h1> </isif>
                 </div>
                 <!---totals, and checkout actions--->
                 <div class="col-sm-5 col-md-4 totals">
@@ -92,6 +93,4 @@
     <div class="container">
         <isslot id="cart-recommendations-m" description="Recommended products" context="global" />
     </div>
-
-    ${pdict.example}
 </isdecorate>
