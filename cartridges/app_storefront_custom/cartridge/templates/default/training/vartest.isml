@@ -1,0 +1,10 @@
+<isset name="sessionVar" value="Johnson" scope = "session"/>
+
+<isset name="pageVar" value="pageSample" scope="page"/>
+
+
+${session.custom.sessionVar}<br/>
+
+${pageVar}<br/>
+
+${pdict.requestVar + 1}
